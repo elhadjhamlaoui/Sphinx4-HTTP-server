@@ -185,11 +185,13 @@ public class RequestHandler extends AbstractHandler
 
         //convert file to .wav
         File convertedFile;
-        try
+        /*try
         {
             convertedFile = AudioFileManipulator.convertToWAV(audioFile,
                     fileManager.getNewFile(FileManager.CONVERTED_DIR, ".wav")
                             .getAbsolutePath());
+
+
             //delete the original audio file immediately as it's not needed
             fileManager.disposeFiles(audioFile);
         }
@@ -202,7 +204,9 @@ public class RequestHandler extends AbstractHandler
             fileManager.disposeFiles(audioFile);
             logger.warn("unable to convert an audio file to WAV");
             return;
-        }
+        }*/
+        convertedFile = audioFile;
+
 
         //check for session
         Session session;
