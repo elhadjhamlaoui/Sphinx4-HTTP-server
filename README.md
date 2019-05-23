@@ -59,7 +59,7 @@ An example of a request would look like the following:
 ```
 $ curl -X POST --data-binary @filename.webm -H "Content-Type: audio/webm" http://localhost:8081/recognize
 ```
-After retrieving a request, the server will convert the given audio file to the right format for Sphinx4. It will then do speech recognition. The result will be  send back in JSON format. The structure of the JSON is dependent on the configuration.
+After retrieving a request a request, the server will convert the given audio file to the right format for Sphinx4. It will then do speech recognition. The result will be  send back in JSON format. The structure of the JSON is dependent on the configuration.
 
 A non-chunked reply will look like the following:
 ```
